@@ -24,3 +24,6 @@ The aim of this repository is to showcase the Cloud team's input for The Bridge'
 - *Define the CD architecture according to the objective (Dev only, Dev and Prod).* Monitoring and log management: Implement a monitoring solution where developers can check the status of their deployed solution at all times.
 
 - *Security and compliance:* Students must secure the infrastructure and application through good security practices so that it cannot be misused by elements outside the organisation or misused by elements within the organisation.
+
+![Arquitectura Cloud]([nombre-de-la-imagen.jpg](https://cdn.discordapp.com/attachments/1131859623817781271/1136641914892984411/image.png?ex=653a6046&is=6527eb46&hm=e44765d17b896df2398e27125402acd8594ef944f1b3615a0c759f204106f9b8&)https://cdn.discordapp.com/attachments/1131859623817781271/1136641914892984411/image.png?ex=653a6046&is=6527eb46&hm=e44765d17b896df2398e27125402acd8594ef944f1b3615a0c759f204106f9b8&)
+
