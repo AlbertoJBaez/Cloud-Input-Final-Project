@@ -1,13 +1,22 @@
-# Cloud input 
+# Bootcamp's Final Project: the Cloud & DevOps team input
 
-The aim of this repository is to showcase the Cloud team's input for The Bridge's final bootcamp project in August 2023.
+This repository corresponds to the Cloud and DevOps team's contribution to the [The Bridge](https://www.thebridge.tech/?utm_medium=ppc&utm_source=adwords&utm_campaign=GA_The+Bridge_Marca&utm_term=the%20bridge%20bootcamp&hsa_kw=the%20bridge%20bootcamp&hsa_net=adwords&hsa_ver=3&hsa_cam=6496961935&hsa_ad=549241137266&hsa_acc=1272778203&hsa_src=g&hsa_grp=82036397030&hsa_mt=p&hsa_tgt=kwd-1287381892718&gclid=Cj0KCQjw06-oBhC6ARIsAGuzdw3wywTfvzIW39JlTTrYJZYpkwF0yUkijjEy_5Isn9yp4Dv70WAwjewaAu5zEALw_wcB) Bootcamp end-of-course project.
 
-  - Building a scalable, secure and efficient cloud architecture design for automation systems.
+## The project 
 
-  - Automatic version synchronization and continuous systems and application deployment.
+[The project](https://github.com/desafioteam1) was focused on solving a problem raised in a brief and value the experience of each team (UX UI product design, cybersecurity, data science, full stack web development, digital marketing and cloud/devOps).
 
+Goals of the project:
 
-## Technical requirements of the project
+- Complex problem solving.
+- Work with agile methodologies, in a realistic work situation with multidisciplinary teams.
+- Development of a project under the pressure of deadlines and the presentation of the project before a jury.
+
+The team of Cloud and DevOps would have a series of duties to deliver a complete Cloud solution to the project.
+
+## The contribution of Cloud and Devops team
+
+### Technical requirements of the Cloud & DevOps input to the project
 
 - *Select the Cloud account associated with the project group*. Find a way to get free for the duration of the crew challenge.
 
@@ -25,5 +34,51 @@ The aim of this repository is to showcase the Cloud team's input for The Bridge'
 
 - *Security and compliance:* Students must secure the infrastructure and application through good security practices so that it cannot be misused by elements outside the organisation or misused by elements within the organisation.
 
-![Arquitectura Cloud]([nombre-de-la-imagen.jpg](https://cdn.discordapp.com/attachments/1131859623817781271/1136641914892984411/image.png?ex=653a6046&is=6527eb46&hm=e44765d17b896df2398e27125402acd8594ef944f1b3615a0c759f204106f9b8&)https://cdn.discordapp.com/attachments/1131859623817781271/1136641914892984411/image.png?ex=653a6046&is=6527eb46&hm=e44765d17b896df2398e27125402acd8594ef944f1b3615a0c759f204106f9b8&)
+###  Cloud service selection
+
+Amazon Web Services (AWS) stands out as an ideal choice for running a cloud project in a bootcamp course for several key reasons. First, AWS's wide range of services provides a scalable and flexible infrastructure that adapts to the specific needs of any project. From compute and storage to artificial intelligence and machine learning, AWS offers a wide variety of services that allow students to explore and apply a wide range of technologies in their project.
+
+In addition, AWS's ease of use and comprehensive documentation make it accessible to beginners and students alike. The intuitive web administration console allows services to be configured and managed without a steep learning curve, which is especially beneficial in an educational environment where time is limited. In addition, AWS provides educational resources such as tutorials, hands-on labs and certifications that complement classroom learning and allow students to acquire practical, industry-recognised skills.
+
+Another key advantage is the global presence of AWS and its data centres. This means that students can deploy their project in a wide variety of locations, which is valuable both for the global availability of the project and for the hands-on experience of working with a worldwide cloud infrastructure. In short, the versatility, accessibility and educational resources provided by AWS make it an ideal choice for bootcamp students wishing to undertake end-of-course cloud projects.
+
+### Assign permissions by teams and project members.
+
+Of the various project teams, we will assign permissions to those who will be stakeholders of the cloud architecture. These are: 
+
+- Full stack,
+- Data, full stack, and
+- Cybersecurity.
+
+### Cloud infrastructure deployment
+
+To meet the technical requirements of the project, we will aim to build a reliable, resilient and safe architecture. 
+
+We will have to make sure to build a pipeline that ensures the smooth and stable provisioning of data following CI/CD best practices. 
+
+- Services: GitHub Actions.
+
+Once the provisioning is adequate, we will launch the data provided by the Full-Stack and Data team to launch the application in the cloud.
+
+- Services: 
+
+All this will be under the guidelines of the cyber security team, who will have the necessary permissions to request the relevant security services in our cloud.
+
+Después de 
+
+![Arquitectura Cloud](https://github.com/AlbertoJBaez/Cloud-Input-Final-Project/blob/main/Assets/Arquitectura-Cloud-Proyecto.png)
+
+<!--
+
+### Infrastructure automation and management: The provisioning and management of cloud infrastructure should be automated.* This involves defining and deploying infrastructure as code (Infrastructure as Code) and using automation techniques to configure and update it.
+
+-->
+
+### Implementation of CI/CD pipelines:* Students must establish a continuous integration and continuous delivery (CI/CD) flow. They must build an application that allows the automated construction and deployment of the developed application or services.
+
+- *Define the CI architecture according to the type and language of the application to be developed.*
+
+- *Define the CD architecture according to the objective (Dev only, Dev and Prod).* Monitoring and log management: Implement a monitoring solution where developers can check the status of their deployed solution at all times.
+
+### Security and compliance:* Students must secure the infrastructure and application through good security practices so that it cannot be misused by elements outside the organisation or misused by elements within the organisation.
 
