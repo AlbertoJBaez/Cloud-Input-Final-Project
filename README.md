@@ -69,7 +69,11 @@ To meet the technical requirements of the project, we will aim to build a reliab
 
 The approach we will follow for deployment will be the one outlined in the official guide on how to [Deploy applications on AWS App Runner with GitHub Actions](https://aws.amazon.com/es/blogs/containers/deploy-applications-in-aws-app-runner-with-github-actions/).
 
-AWS App Runner is a fully orchestrated platform that simplifies the deployment of web applications in containers and APIs.  We will start from a container image with ECR and App Runner will orchestrate the creation, scaling and fortification of the application in the AWS cloud environment. For data provisioning, we will create a pipeline on GitHub actions that will ensure continuous, secure and efficient provisioning and deployment of data for our deployment. 
+AWS App Runner is a fully orchestrated platform that simplifies the deployment of web applications in containers and APIs.  
+
+We will start from a container image with ECR and App Runner will orchestrate the creation, scaling and fortification of the application in the AWS cloud environment. 
+
+For data provisioning, we will create a pipeline on GitHub actions that will ensure continuous, secure and efficient provisioning and deployment of data for our deployment. 
 
 #### The components of our deployment 
 
