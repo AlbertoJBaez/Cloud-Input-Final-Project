@@ -65,25 +65,44 @@ Establishing these permission levels ensures that each team can do its job effec
 
 To meet the technical requirements of the project, we will aim to build a reliable, resilient and safe architecture. 
 
+The approach we will follow for deployment will be the one outlined in the official guide on how to [Deploy applications on AWS App Runner with GitHub Actions](https://aws.amazon.com/es/blogs/containers/deploy-applications-in-aws-app-runner-with-github-actions/).
+
+AWS App Runner is a fully orchestrated platform that simplifies the deployment of web applications in containers and APIs.  We will start from a container image with ECR and App Runner will orchestrate the creation, scaling and fortification of the application in the AWS cloud environment. For data provisioning, we will create a pipeline on GitHub actions that will ensure continuous, secure and efficient provisioning and deployment of data for our deployment. 
+
+#### The components of our deployment 
+
 We will have to make sure to build a pipeline that ensures the smooth and stable provisioning of data following **CI/CD** best practices. 
 
 - Services: GitHub Actions.
-
+  
 Once the provisioning is adequate, we will launch the data provided by the Full-Stack and Data team to **deploy the application in the cloud**.
 
-- Services: 
+- Services: AWS App runner, AWS ECR, AWS RDS, Docker.
 
-All this will be **under the guidelines of the cybersecurity team**, who will have the necessary permissions to request the relevant security services in our cloud.
+The deployment must **comply with the required security standards**. This will be done under the guidelines of the cyber security team, who will have the necessary permissions to request the relevant security services in our cloud.
 
+- Services: AWS Firewall Manager, AWS Firewall Manager
 
-![Arquitectura Cloud](https://github.com/AlbertoJBaez/Cloud-Input-Final-Project/blob/main/Assets/Arquitectura-Cloud-Proyecto.png)
+With all these components we would have a completely functional cloud infrastructure. 
+
+#### Cloud architecture representation
+
+![Arquitectura Cloud](https://github.com/AlbertoJBaez/Cloud-Input-Final-Project/blob/main/Assets/Arquitectura-Cloud-Proyecto-nitido.png)
 
 <!--
 
 ### Infrastructure automation and management: The provisioning and management of cloud infrastructure should be automated.* This involves defining and deploying infrastructure as code (Infrastructure as Code) and using automation techniques to configure and update it.
 
--->
 
+
+IMAGENES
+
+
+![GithubActions](https://github.com/AlbertoJBaez/Cloud-Input-Final-Project/blob/main/Assets/GitHub%20Actions.png)
+![Apprunner](https://github.com/AlbertoJBaez/Cloud-Input-Final-Project/blob/main/Assets/aws-app-runner.jfif) 
+![AWS ECR] 
+![RDS] 
+![Docker]
 ### Implementation of CI/CD pipelines:* Students must establish a continuous integration and continuous delivery (CI/CD) flow. They must build an application that allows the automated construction and deployment of the developed application or services.
 
 - *Define the CI architecture according to the type and language of the application to be developed.*
@@ -91,4 +110,7 @@ All this will be **under the guidelines of the cybersecurity team**, who will ha
 - *Define the CD architecture according to the objective (Dev only, Dev and Prod).* Monitoring and log management: Implement a monitoring solution where developers can check the status of their deployed solution at all times.
 
 ### Security and compliance:* Students must secure the infrastructure and application through good security practices so that it cannot be misused by elements outside the organisation or misused by elements within the organisation.
+
+-->
+
 
