@@ -77,15 +77,15 @@ For data provisioning, we will create a pipeline on GitHub actions that will ens
 
 #### The components of our deployment 
 
-We will have to make sure to build a pipeline that ensures the smooth and stable provisioning of data following **CI/CD** best practices. 
+**CI/CD**: We will have to make sure to build a pipeline that ensures the smooth and stable provisioning of data following **CI/CD** best practices. 
 
 - Services: GitHub Actions.
   
-Once the provisioning is adequate, we will launch the data provided by the Full-Stack and Data team to **deploy the application in the cloud**.
+**Deployment**: Once the provisioning is adequate, we will launch the data provided by the Full-Stack and Data team to **deploy the application in the cloud**.
 
 - Services: AWS App runner, AWS ECR, AWS RDS, Docker.
 
-The deployment must **comply with the required security standards**. This will be done under the guidelines of the cyber security team, who will have the necessary permissions to request the relevant security services in our cloud.
+**Cibersecurity**: The deployment must **comply with the required security standards**. This will be done under the guidelines of the cyber security team, who will have the necessary permissions to request the relevant security services in our cloud.
 
 - Services: AWS Firewall Manager, AWS Firewall Manager
 
