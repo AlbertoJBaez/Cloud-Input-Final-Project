@@ -63,6 +63,8 @@ Establishing these permission levels ensures that each team can do its job effec
 
 ### Cloud infrastructure deployment
 
+#### Approach
+
 To meet the technical requirements of the project, we will aim to build a reliable, resilient and safe architecture. 
 
 The approach we will follow for deployment will be the one outlined in the official guide on how to [Deploy applications on AWS App Runner with GitHub Actions](https://aws.amazon.com/es/blogs/containers/deploy-applications-in-aws-app-runner-with-github-actions/).
