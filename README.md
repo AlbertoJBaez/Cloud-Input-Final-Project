@@ -50,21 +50,31 @@ Of the various project teams, we will assign permissions to those who will be st
 - Data, full stack, and
 - Cybersecurity.
 
+In a cloud development environment, AWS's IAM (Identity and Access Management) permissions management is essential to ensure the security and efficiency of resources. The Full Stack, Data and Cybersecurity teams have different roles and specific needs.
+
+For the Full Stack team, it is essential to provide access to cloud computing services and databases, but restrict access to critical configurations to prevent unintentional errors.
+
+The Data team needs permissions to access data storage, processing and analysis services, but infrastructure changes must be limited to maintain stability.
+
+As for the Cybersecurity team, they should be granted access to monitor and audit services for potential threats, but not allow changes without approval.
+
+Establishing these permission levels ensures that each team can do its job effectively and securely, while protecting critical cloud resources.
+
+
 ### Cloud infrastructure deployment
 
 To meet the technical requirements of the project, we will aim to build a reliable, resilient and safe architecture. 
 
-We will have to make sure to build a pipeline that ensures the smooth and stable provisioning of data following CI/CD best practices. 
+We will have to make sure to build a pipeline that ensures the smooth and stable provisioning of data following **CI/CD** best practices. 
 
 - Services: GitHub Actions.
 
-Once the provisioning is adequate, we will launch the data provided by the Full-Stack and Data team to launch the application in the cloud.
+Once the provisioning is adequate, we will launch the data provided by the Full-Stack and Data team to **deploy the application in the cloud**.
 
 - Services: 
 
-All this will be under the guidelines of the cyber security team, who will have the necessary permissions to request the relevant security services in our cloud.
+All this will be **under the guidelines of the cybersecurity team**, who will have the necessary permissions to request the relevant security services in our cloud.
 
-Después de 
 
 ![Arquitectura Cloud](https://github.com/AlbertoJBaez/Cloud-Input-Final-Project/blob/main/Assets/Arquitectura-Cloud-Proyecto.png)
 
