@@ -2,6 +2,8 @@
 
 This repository corresponds to the Cloud and DevOps team's contribution to the [The Bridge](https://www.thebridge.tech/?utm_medium=ppc&utm_source=adwords&utm_campaign=GA_The+Bridge_Marca&utm_term=the%20bridge%20bootcamp&hsa_kw=the%20bridge%20bootcamp&hsa_net=adwords&hsa_ver=3&hsa_cam=6496961935&hsa_ad=549241137266&hsa_acc=1272778203&hsa_src=g&hsa_grp=82036397030&hsa_mt=p&hsa_tgt=kwd-1287381892718&gclid=Cj0KCQjw06-oBhC6ARIsAGuzdw3wywTfvzIW39JlTTrYJZYpkwF0yUkijjEy_5Isn9yp4Dv70WAwjewaAu5zEALw_wcB) Bootcamp end-of-course project.
 
+The [data](https://github.com/AlbertoJBaez/full-stack) has been provided by the full-stack team of such project 
+
 ## The project 
 
 [The project](https://github.com/desafioteam1) was focused on solving a problem raised in a brief and value the experience of each team (UX UI product design, cybersecurity, data science, full stack web development, digital marketing and cloud/devOps).
