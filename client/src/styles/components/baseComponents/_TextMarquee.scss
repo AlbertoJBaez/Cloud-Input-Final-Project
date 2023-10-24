@@ -1,0 +1,45 @@
+@import '../../utils/variables.scss';
+@import '../../utils/mixins.scss';
+
+
+.marquee{
+  display: flex;
+  overflow:hidden;
+  gap:1rem;
+  position:relative;
+  user-select: none;
+  width:100%;
+  background: $neutral-black;
+
+}
+
+.marquee .marquee-text {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 100%;
+  gap: 1rem;
+}
+
+.marquee-text h3{
+  color: $neutral-black;
+}
+.marquee .marquee-star{
+  padding: 10px;
+  margin: 0 24px;
+}
+
+
+@keyframes scroll {
+  from {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(calc(-100% - 1rem))
+  }
+}
+
+.scroll {
+  animation: scroll $marquee-speed linear infinite;
+}

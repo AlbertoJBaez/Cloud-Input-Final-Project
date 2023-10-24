@@ -1,0 +1,75 @@
+@import '../../utils/mixins.scss';
+@import '../../utils/variables.scss';
+@import '../../utils/media_queries.scss';
+
+.form_header {
+  @include flexCol;
+  padding: 48px 96px;
+  gap: 10px;
+  text-align: left;
+  width: 100%;
+
+  .TitleM {
+    @include TitleM;
+    margin: 0 24px;
+  }
+
+  .bodyXLRegular {
+    @include bodyXLRegular;
+    margin: 0 24px;
+  }
+}
+
+.contact_header {
+  @include flexCol;
+  padding: 0 96px;
+  gap: 24px;
+  text-align: left;
+  margin: 48px 0;
+  width: 100%;
+
+  .header_question {
+    @include flexCol;
+    gap: 10px;
+  
+    .TitleM {
+      @include TitleM;
+    }
+  
+    .bodyXLRegular {
+      @include bodyXLRegular;
+    }
+  }
+
+  .contact_us {
+    display: flex;
+    text-align: left;
+    width: 60%;
+    gap: 48px;
+    margin: auto;
+    
+    .contact_data {
+      @include flexCol;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      width: 100%;
+
+      .TitleXS {
+        @include TitleXS;
+      }
+
+      .TitleM {
+        @include TitleM;
+      }
+    }
+  }
+}    
+
+.text_band {
+  overflow: hidden;
+  padding: 24px 0;
+  margin: 0 0 48px 0;
+  width: 100%;
+  background-color: #069A8E;
+}

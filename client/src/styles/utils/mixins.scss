@@ -1,0 +1,180 @@
+@import '../utils/variables.scss';
+
+@mixin grid-1-col {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@mixin grid-2-col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@mixin flexCol {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flexCenterCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flexWrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin inputStyle {
+  min-width: 294px;
+  max-width: 490px;
+  width: 100%;
+  margin: 0px;
+  min-height: 36px;
+  padding: 4px 12px 0px 12px;
+  border: none;
+  border-radius: 10px;
+  color:  $neutral-gray2;
+  background-color: $neutral-gray3;
+}
+
+@mixin TitleXS {
+  font-family: BasierCircle;
+  font-size: 24px;
+  font-weight: 700;
+  overflow-wrap: break-word;
+  margin-bottom: 0;
+}
+
+@mixin TitleS {
+  font-family: BasierCircle;
+  font-size: 32px;
+  font-weight: 700;
+  overflow-wrap: break-word;
+  margin-bottom: 0;
+}
+
+@mixin TitleM {
+  font-size: 42px;
+  font-family: 'Basier Circle';
+  font-weight: 700;
+  word-wrap: break-word;
+  margin-bottom: 0;
+  text-align: left;
+}  
+
+@mixin TitleL {
+  font-size: 56px;
+  font-family: 'Basier Circle';
+  font-weight: 700;
+  word-wrap: break-word;
+  margin-bottom: 0;
+}  
+
+@mixin TitleXL {
+  font-family: BasierCircle;
+  font-size: 64px;
+  font-weight: 700;
+  overflow-wrap: break-word;
+  margin-bottom: 0;
+}
+
+@mixin bodyMCAPS {
+  font-family: Orkney;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  overflow-wrap: break-word;
+  margin-bottom: 0;
+}
+
+@mixin bodySRegular {
+  font-family: Orkney;
+  font-size: 14px;
+  font-weight: 300;
+  overflow-wrap: break-word;
+  margin-bottom: 0;
+}
+
+
+@mixin bodyMRegular {
+  font-family: Orkney;
+  font-size: 16px;
+  font-weight: 300;
+  overflow-wrap: break-word;
+  margin-bottom: 0;
+}
+
+@mixin bodyLRegular {
+  font-family: Orkney;
+  font-size: 20px;
+  font-weight: 300;
+  overflow-wrap: break-word;
+  margin-bottom: 0;
+}
+
+@mixin bodyXLRegular {
+  font-family: Orkney;
+  font-size: 24px;
+  font-weight: 300;
+  overflow-wrap: break-word;
+  margin-bottom: 0;
+}
+
+@mixin bodyXXLRegular {
+  font-family: Orkney;
+  font-size: 32px;
+  font-weight: 300;
+  overflow-wrap: break-word;
+  margin-bottom: 0;
+  line-height: 38.4px;
+}
+
+@mixin bodyMBold {
+  font-family: Orkney;
+  font-size: 16px;
+  font-weight: 700;
+  overflow-wrap: break-word;
+  margin-bottom: 0;
+}
+
+@mixin bodyLBold {
+  font-family: Orkney;
+  font-size: 20px;
+  font-weight: 700;
+  overflow-wrap: break-word;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
+@mixin bodyXLBold {
+  font-family: Orkney;
+  font-size: 24px;
+  font-weight: 700;
+  overflow-wrap: break-word;
+  margin-bottom: 0;
+}
+
+@mixin bodyXXLBold {
+  font-family: Orkney;
+  font-size: 32px;
+  font-weight: 700;
+  overflow-wrap: break-word;
+  margin-bottom: 0;
+}
+
+@mixin CTA_btn {
+  @include flexCenterCenter;
+  @include TitleXS;
+  min-width: fit-content;
+  min-height: fit-content;
+  width: 150px;
+  height: 48px;
+  border-radius: 40px;
+  border: 3px solid $neutral-black;
+  background: $primary-color-ligth;
+  position: sticky;
+  bottom: 48px;
+  z-index: 5;
+}

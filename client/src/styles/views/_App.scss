@@ -1,0 +1,53 @@
+@import '../utils/mixins.scss';
+ 
+#root {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100vw;
+  font-size: 62.5%;
+}
+
+html {
+  width: 100%;
+  font-family: 'Orkney', sans-serif;
+  font-family: 'Basier Circle', sans-serif;
+}
+
+main {
+  @include flexCol;
+  align-items: center;
+  min-width: 390px;
+  width: 100%;
+  min-height: 100vh;
+
+  &>section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.bg-noVisible {
+  visibility: hidden;
+}
+
+.cta_btn {
+  @include flexCenterCenter;
+  @include TitleXS;
+  min-width: fit-content;
+  min-height: fit-content;
+  width: 150px;
+  height: 48px;
+  border-radius: 40px;
+  border: 3px solid $neutral-black;
+  background: $primary-color-ligth;
+  position: sticky;
+  bottom: 48px;
+  z-index: 1;
+}
+

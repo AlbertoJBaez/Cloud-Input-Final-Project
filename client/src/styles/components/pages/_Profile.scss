@@ -1,0 +1,389 @@
+@import '../../utils/mixins.scss';
+@import '../../utils/media_queries.scss';
+@import '../../utils/variables.scss';
+
+
+.profile_header {
+  display: flex;
+  flex-direction: row;
+  padding: 24px;
+  margin: 0;
+  width: 100%;
+  gap: 24px;
+
+
+  .profile_avatar {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin: auto;
+  }
+
+  .profile_headerText {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+
+    .Comunity {
+      @include TitleS;
+    }
+    .user_id, .adrress {
+      @include bodyMRegular;  
+
+    }
+    .bold {
+      @include bodyLRegular;
+      font-weight: 700;
+    }
+  }
+}
+
+.profile_progressBar {
+  @include flexCol;
+  width: 100%;
+  margin-top: 0;
+
+  .legend {
+    @include bodyLRegular;
+    text-align: left;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+    gap: 10px;
+
+    .legend_title {
+      @include TitleS;
+    }
+
+    li {
+      align-items: center;
+      @include bodyMRegular;
+      margin-bottom: 0;
+
+
+      .legend_color {
+        display: inline-block;
+        height: 16px;
+        width: 16px;
+        margin-right: 10px;
+      }
+
+
+      .done {
+        background-color: #009B72;
+      }
+      .inProcess {
+        background-color: #1565C0;
+      }
+      .docRequired {
+        background-color: #EE740D;
+      }
+      .notInit {
+        background-color: #D9D9D9;
+      }
+    }
+  }
+}
+
+
+.profile_temperature {
+
+  .temp_header {
+    @include flexCol;
+    text-align: left;
+    max-width: 900px;
+    width: 100%;
+    padding: 24px;
+    gap: 12px;
+ 
+    .real_temp {
+      @include TitleS;
+    }
+
+    .bodyXLRegular {
+      @include bodyXXLRegular;
+    }
+  }
+
+  .profile_temp {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 32px;
+    padding: 24px;
+
+    .temp_user {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 24px;
+ 
+      .temp_meassure {
+        .temp_label {
+          @include bodyMRegular;
+        }
+        .temp_box {
+          @include flexCol;
+          width: 160px;
+          padding: 4px 20px;
+          justify-content: center;
+          align-items: center;
+          border: solid 3.9px black;
+          border-radius: 40px;
+         
+          .temp_text {
+            @include TitleXS;
+          }
+        }
+        .temp_exterior {
+          @include TitleS;
+          background-color: #ee740d;
+        }
+
+        .temp_interior {
+          @include TitleL;
+          background-color:#47d3ff;
+        }
+      }
+
+      .temp_savedTrees {
+        display: flex;
+        flex-direction: row;
+
+        .temp_text {
+          @include TitleXS;
+          height: 64px;
+          width: 200px;
+        }
+
+        img {
+          min-width: 80px;
+          width: 100%;
+          max-width: 150px;
+          margin: auto;
+        }
+      }
+    }
+ 
+    .temp_savedTrees {
+      .temp_box {
+        @include flexCol;
+        justify-content: space-between;
+        align-items: center;
+        height: 72.8px;
+        width: 228.8px;
+        justify-content: center;
+        align-items: center;
+        border: solid 3.9px black;
+        border-radius: 40px;
+        background-color: #009b72;
+        gap: 8px;
+ 
+        .temp_text {
+          font-size: 42px;
+        }
+      }
+ 
+      .temp_text {
+        font-size: 42px;
+      }
+    }
+  }
+}
+
+.pdf_report {
+  margin: 24px 96px;
+  padding: 48px;
+  background-color: $neutral-gray1;
+
+  .pdf__Page__textContent  {
+    padding: 48px;
+  }
+
+  .cta_pdf {
+    @include CTA_btn;
+    position: relative;
+    top: 70px;
+    left: 32%;
+  }
+
+  .report {
+    height: 842px;
+    width: 595px;
+  }
+
+  .pdf_btns {
+    @include flexCenterCenter;
+    position: relative;
+    bottom: 65px;
+    gap: 24px;
+
+    .arrow_rigth {
+      @include flexCenterCenter;
+      width: 75px;
+      height: 48px;
+      border-radius: 0px 40px 40px 0px;
+      border: 3px solid $neutral-black;
+      background: $primary-color-ligth;
+      z-index: 100;
+    }
+
+    .arrow_left {
+      display: flex;
+      width: 75px;
+      height: 48px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 40px 0 0 40px;
+      border: 3px solid $neutral-black;
+      background: var(--primary-light, #A1E3D8);
+      z-index: 100;
+    }
+  }
+}
+
+.profile_incidents {
+  @include flexCol;
+  width: 100%;
+  height: fit-content;
+  gap: 32px;
+  margin-bottom: 48px;
+  
+  &>div {
+    max-width: 900px;
+  }
+
+
+  .incidents_header {
+    @include flexCol;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    gap: 10px;
+    max-width: 900px;
+    padding: 24px;
+
+    .incident_title {
+      @include TitleS;
+    }
+
+    .incident_contacts {
+      @include bodyLRegular;
+      text-align: left;
+    }
+  }
+
+
+  .incidents_content {
+    @include flexCol;
+    gap: 8px;
+    
+    .nextui-c-lfcDHB {
+      padding: 0.3rem 0;
+    }
+    .nextui-c-hPzDAx-iIEvbn-bordered-true {
+      border-radius: 0.2rem;
+    }
+    .notification_form {
+      @include flexCol;
+      gap: 48px;
+
+      .input {
+        min-width: 294px;
+        margin: 0px;
+        padding-left: 0.4rem;
+        border: solid 0.01px gray;
+        display: flex;
+        gap: 8px;
+        height: 48px;
+        
+        .bodyXLBold {
+          @include bodyXLBold;
+          padding-left: 0.04rem;
+        }
+      }
+
+      .cta_incidents {
+        @include CTA_btn;
+        margin: auto;
+      }
+
+    }
+  }
+}
+
+@media (min-width: 650px) {
+
+  .profile_header {
+    display: flex;
+    align-items: start;
+    height: fit-content;
+    max-width: 900px;
+    padding: 32px 48px;
+    margin: 16px;
+    width: 100%;
+    gap: 48px;
+
+    .profile_headerText {
+      padding: 0 40px;
+    }
+  }
+
+  .profile_progressBar {
+    padding: 0 48px 24px;
+    .steps_Wrapper  {
+      gap: 4px;
+    }
+
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+  }
+  .profile_temp {
+    .co2_tree {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .temp_savedTrees {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  .profile_temp {
+    @include flexCol;
+    justify-content: center;
+  }
+
+
+  .profile_incidents  {
+    padding: 24px 48px;
+    width: 100vw;
+    margin: auto;
+
+    .incidents_header {
+      @include flexCol;
+      justify-content: center;
+      align-items: flex-start;
+      text-align: left;
+      padding: 24px;
+      gap: 10px;
+    }
+
+    .incident_title {
+      @include  TitleM;
+    }
+    
+    .incident_contacts {
+      @include bodySRegular;
+    }
+  }
+}

@@ -1,0 +1,127 @@
+@import '../utils/variables.scss';
+@import '../utils/mixins.scss';
+@import '../utils/media_queries.scss';
+
+
+.nextui-c-hhqfap {
+  display: flex;
+  justify-content: space-between;
+  place-content: center;
+  min-width: 390px;
+  width: 100vw;
+  padding: 0 24px;
+
+  .nextui-navbar-container {
+    height: 66px;
+    padding: 0;
+  }
+
+  .nextui-c-iTPCAT-dusCa-isOpen-true {
+    @include flexCol;
+    justify-content: right;
+    width: 200px;
+    min-height: fit-content;
+    padding-bottom: 0;
+    margin-left: auto;
+    height: fit-content;
+  }
+
+  .collapse > ul {
+    @include flexCol;
+    padding: 0;
+    justify-content: right;
+    gap: 4px;
+    width: 100%;
+    min-height: fit-content;
+
+    a {
+      @include bodyMCAPS;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      color: $neutral-black;
+      width: 180px;
+      min-height: 48px;
+      text-align: right;
+    }
+    
+    li {
+      display: flex;
+      justify-content: right;
+      margin-left: 35%;
+    }
+
+    .navBar_logo {
+      width: 100px;
+      padding: 5px 8px 12px;
+      margin-left: 35%;
+    }
+  } 
+  .nextui-c-egxOLa.navBar_layer {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nextui-c-iWjDFM {
+    flex-direction: row-reverse;  
+    justify-content: center;
+    margin-left: 35%;
+    border-radius: 0;
+    background-color: transparent;
+    color: $primary-base-color;
+    height: fit-content;
+    padding: 10px;
+    gap: 10px;
+    border-top: 1px solid $primary-base-color;
+    min-width: fit-content;
+    height: 48px;
+
+    .nextui-button-text {
+      gap: 6px;
+    }
+  }
+}
+
+@include tablet {
+  .nextui-c-jklhtj {
+    gap: 12px;
+    margin-left: auto;
+
+    a {
+      @include bodySRegular;
+      color: $neutral-black;
+      padding: 4px 8px;
+    }
+  }
+
+  .nextui-c-hhqfap .nextui-c-iWjDFM {
+    border: none;
+    margin-left: 0;
+  }
+
+  .nextui-tooltip-button {
+    border-left: 1px solid $primary-base-color;
+  }
+
+}
+
+@include Desktop {
+  .nextui-c-jklhtj {
+    @include bodyMCAPS;
+    // min-width: 100vw;
+    padding: 0 96px;
+    gap: 6;
+  }
+
+  .nextui-c-hhqfap .nextui-c-iWjDFM {
+    border: none;
+  }
+  .nextui-tooltip-button {
+    border-left: 1px solid $primary-base-color;
+  }
+}
+
+@include large_screens {
+
+}
