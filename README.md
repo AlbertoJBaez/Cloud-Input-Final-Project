@@ -95,7 +95,7 @@ For data provisioning, we will create a pipeline on GitHub actions that will ens
 
 With all these components we would have a completely functional cloud infrastructure. 
 
-##### Cloud architecture representation
+### Final Cloud architecture representation
 
 ![Arquitectura Cloud](https://github.com/AlbertoJBaez/Cloud-Input-Final-Project/blob/main/Assets/Arquitectura-Cloud-Proyecto-nitido.png)
 
