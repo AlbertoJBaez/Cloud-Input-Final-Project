@@ -36,7 +36,9 @@ The team of Cloud and DevOps would have a series of duties to deliver a complete
 
 - *Security and compliance:* Students must secure the infrastructure and application through good security practices so that it cannot be misused by elements outside the organisation or misused by elements within the organisation.
 
-###  Cloud service selection
+### The elements of the project
+
+#### Cloud service selection
 
 Amazon Web Services (AWS) stands out as an ideal choice for running a cloud project in a bootcamp course for several key reasons. First, AWS's wide range of services provides a scalable and flexible infrastructure that adapts to the specific needs of any project. From compute and storage to artificial intelligence and machine learning, AWS offers a wide variety of services that allow students to explore and apply a wide range of technologies in their project.
 
@@ -44,7 +46,7 @@ In addition, AWS's ease of use and comprehensive documentation make it accessibl
 
 Another key advantage is the global presence of AWS and its data centres. This means that students can deploy their project in a wide variety of locations, which is valuable both for the global availability of the project and for the hands-on experience of working with a worldwide cloud infrastructure. In short, the versatility, accessibility and educational resources provided by AWS make it an ideal choice for bootcamp students wishing to undertake end-of-course cloud projects.
 
-### Assign permissions by teams and project members.
+#### Assign permissions by teams and project members.
 
 Of the various project teams, we will assign permissions to those who will be stakeholders of the cloud architecture. These are: 
 
@@ -63,9 +65,9 @@ As for the Cybersecurity team, they should be granted access to monitor and audi
 Establishing these permission levels ensures that each team can do its job effectively and securely, while protecting critical cloud resources.
 
 
-### Cloud infrastructure deployment
+#### Cloud infrastructure deployment
 
-#### Approach
+##### Approach
 
 To meet the technical requirements of the project, we will aim to build a reliable, resilient and safe architecture. 
 
@@ -77,7 +79,7 @@ We will start from a container image with ECR and App Runner will orchestrate th
 
 For data provisioning, we will create a pipeline on GitHub actions that will ensure continuous, secure and efficient provisioning and deployment of data for our deployment. 
 
-#### The components of our deployment 
+##### The components of our deployment 
 
 **CI/CD**: We will have to make sure to build a pipeline that ensures the smooth and stable provisioning of data following **CI/CD** best practices. 
 
@@ -93,7 +95,7 @@ For data provisioning, we will create a pipeline on GitHub actions that will ens
 
 With all these components we would have a completely functional cloud infrastructure. 
 
-#### Cloud architecture representation
+##### Cloud architecture representation
 
 ![Arquitectura Cloud](https://github.com/AlbertoJBaez/Cloud-Input-Final-Project/blob/main/Assets/Arquitectura-Cloud-Proyecto-nitido.png)
 
